@@ -23,29 +23,34 @@ public class Day1Test {
             System.out.println("9 * " + i + " = " + result);
         }
     }
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner obj=new Scanner(System.in);
-        int num1=obj.nextInt();
-        int num2=obj.nextInt();
-        sumNumber(num1,num2);
-        
-        
-        /*///////////////////
-	int firstNum = obj.nextInt();
-	int secondNum = obj.nextInt();
-		
-	System.out.println("Number 1: "+firstNum+"\nNumber 2: "+secondNum);
+        public static void swapNumbers(int firstNum, int secondNum){
+            System.out.println("Number 1: "+firstNum+"\nNumber 2: "+secondNum);
 
         // swapping 
         System.out.println("Swapping");
 	firstNum = firstNum + secondNum; 
 	secondNum = firstNum - secondNum; 
-	firstNum = firstNum - secondNum; 
-	
-	System.out.println("First number: "+firstNum+"\nSecond number: "+secondNum);*/
+	firstNum = firstNum - secondNum;
+        }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner obj=new Scanner(System.in);
         
+        //summation
+        System.out.println("Enter number 1 for summation: ");
+        int num1=obj.nextInt();
+        System.out.println("Enter number 2 for summarion: ");
+        int num2=obj.nextInt();
+        sumNumber(num1,num2);
         
+        //swap numbers method
+        System.out.println("Enter first number: ");
+	int firstNum = obj.nextInt();
+        System.out.println("Enter second number: ");
+	int secondNum = obj.nextInt();
+	System.out.println("First number: "+firstNum+"\nSecond number: "+secondNum);
+        
+        //print multiplication table of 9
         printNineTable();
 
     }
